@@ -36,7 +36,6 @@ gsub2 <- function(pattern, replacement, x, ...) {
 test_train$activity <- gsub2(num, lab, test_train$activity)
 
 names(test1_train1) <- tolower(names(test1_train1))
-#names(test1_train1) <- gsub(")", "", names(test1_train1))
 names(test1_train1) <- gsub("\\()", "", names(test1_train1))
 names(test1_train1) <- gsub("-", "", names(test1_train1))
 
